@@ -1,0 +1,98 @@
+.banner1 {
+	min-height: 440px;
+	background-color: #f07566;
+	margin: 3rem 0;
+
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: relative;
+
+		>img {
+			position: absolute;
+			top: -2rem;
+			left: 0;
+		}
+
+		>div {
+			min-height: 440px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 1rem;
+			width: 570px;
+
+			h1 {
+				font-family: "Hind Siliguri", sans-serif;
+				font-size: 56px;
+				font-weight: 700;
+				line-height: 64px;
+				letter-spacing: -1px;
+				text-align: left;
+				color: #fff;
+			}
+
+			p {
+				font-family: "Work Sans", sans-serif;
+				font-size: 20px;
+				font-weight: 400;
+				line-height: 32px;
+				text-align: left;
+				color: #ffffff;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:1000px) {
+	.banner1 {
+		padding: 1rem 0;
+
+		.container {
+			flex-direction: column;
+
+			>img {
+				position: static;
+			}
+
+			>div {
+				min-height: unset;
+				margin: 1rem 0;
+				width: 90%;
+
+				h1,
+				p {
+					text-align: center;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:768px) {
+	.banner1 {
+
+		.container {
+			img {
+				max-width: 90%;
+				margin: 0 auto;
+			}
+
+			>div {
+				h1 {
+					font-size: 40px;
+					line-height: 48px;
+					text-align: left;
+				}
+
+				p {
+					font-size: 20px;
+					line-height: 32px;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
